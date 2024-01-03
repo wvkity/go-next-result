@@ -168,6 +168,7 @@ func NewMultipleFailure[K DRKey, V any](status int32, code int32, msg string) *M
 			Success: false,
 		},
 	}
+	_result._setTime()
 	return _result
 }
 

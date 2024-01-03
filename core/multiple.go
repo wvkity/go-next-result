@@ -157,7 +157,7 @@ func NewMultipleWithMany[K DRKey, V any](data map[K]V) *MultipleResult[K, V] {
 //
 // @param code 状态码
 //
-// @param msg 异常信息
+// @param msg 错误消息
 func NewMultipleFailure[K DRKey, V any](status int32, code int32, msg string) *MultipleResult[K, V] {
 	_result := &MultipleResult[K, V]{
 		Data: map[K]V{},
@@ -181,7 +181,7 @@ func NewMultipleFailureWithEmpty[K DRKey, V any]() *MultipleResult[K, V] {
 //
 // @param code 状态码
 //
-// @param msg 异常信息
+// @param msg 错误信息
 func NewMultipleFailureWithMsg[K DRKey, V any](code int32, msg string) *MultipleResult[K, V] {
 	return NewMultipleFailure[K, V](200, code, msg)
 }

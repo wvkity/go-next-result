@@ -1,9 +1,9 @@
-package core_test
+package next_result_test
 
 import (
 	"encoding/json"
 	"fmt"
-	result "github.com/wvkity/next/result/core"
+	result "github.com/wvkity/next-result"
 	"testing"
 )
 

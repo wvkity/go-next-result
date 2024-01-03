@@ -1,4 +1,4 @@
-package core
+package next_result
 
 // DRKey Data Result Key类型
 type DRKey interface {

@@ -1,4 +1,4 @@
-package core
+package next_result
 
 import "time"
 

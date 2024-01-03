@@ -1,4 +1,4 @@
-package core
+package next_result
 
 // PlainResult 单值结果集
 type PlainResult[T any] struct {

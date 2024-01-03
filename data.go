@@ -1,4 +1,4 @@
-package core
+package next_result
 
 // Data 数据模型接口
 type Data[T any] interface {

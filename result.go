@@ -1,4 +1,4 @@
-package core
+package next_result
 
 // Result 结果集接口
 type Result interface {

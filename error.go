@@ -1,4 +1,4 @@
-package core
+package next_result
 
 // Error Error接口
 type Error interface {

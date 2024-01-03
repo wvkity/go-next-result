@@ -50,7 +50,7 @@ func NewPlainWithData[T any](data T) *PlainResult[T] {
 //
 // @param code 状态码
 //
-// @param msg 异常信息
+// @param msg 错误信息
 func NewPlainFailure[T any](status int32, code int32, msg string) *PlainResult[T] {
 	_result := &PlainResult[T]{
 		Brief: &Brief{
@@ -73,7 +73,7 @@ func NewPlainFailureWithEmpty[T any]() *PlainResult[T] {
 //
 // @param code 状态码
 //
-// @param msg 异常信息
+// @param msg 错误信息
 func NewPlainFailureWithMsg[T any](code int32, msg string) *PlainResult[T] {
 	return NewPlainFailure[T](200, code, msg)
 }
